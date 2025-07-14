@@ -71,7 +71,7 @@
 }
 
 .lista-grupos__introducao p {
-    font-size: 20px;
+    font-size: 1.25px;
     line-height: 1.7;
     color: #468189;
     max-width: 600px;
@@ -173,8 +173,8 @@
 }
 
 .lista-grupos__aviso {
-    background-color: rgba(70, 129, 137, 0.1); /* Fundo com azul médio transparente */
-    border-left: 4px solid #468189; /* Detalhe com azul médio */
+    background-color: rgba(70, 129, 137, 0.1); 
+    border-left: 4px solid #468189; 
     padding: 1.5rem;
     border-radius: 8px;
     max-width: 600px;

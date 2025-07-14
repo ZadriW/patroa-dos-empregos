@@ -52,7 +52,7 @@ img {
 
 .cabecalho__apresentacao__titulo {
     color:#FFFFFF;
-    font-size:20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 .cabecalho__logo img {
@@ -354,7 +354,7 @@ img {
 
 .caixa-sobre-mim p {
     color: #031926;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.8;
     margin-bottom: 1rem;
     
