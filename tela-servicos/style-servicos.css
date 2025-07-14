@@ -1,18 +1,15 @@
-/* Importa todos os estilos do site principal para manter a consistência */
+
 @import url('../tela-main/style.css');
 
-/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE SERVIÇOS --- */
-
-/* Seção Hero (Apresentação Inicial) */
 .servicos-hero {
-    background-color: #031926; /* Azul escuro */
+    background-color: #031926; 
     padding: 7rem 5%;
     text-align: center;
     color: #FFFFFF;
 }
 
 .servicos-hero__conteudo {
-    max-width: 850px;
+    max-width: 53.125rem;
     margin: 0 auto;
 }
 
@@ -26,13 +23,11 @@
 .servicos-hero h1::before {
     content: '';
     display: block;
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 1.5rem auto; /* Centraliza e adiciona espaço abaixo do ícone */
-
-    /* SVG do ícone "clipboard-list" */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
-    
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1.5rem auto; 
+    background-image:
+     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,15 +37,15 @@
     font-size: 1.2rem;
     opacity: 0.9;
     line-height: 1.7;
-    max-width: 750px;
+    max-width: 46.875rem;
     margin: 0 auto;
 }
 
 .servico__titulo-detalhado {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
-/* Estilo para as seções de serviço detalhadas */
+
 .imagem-texto__titulo-esquerda {
     display: flex;
     align-items: center;
@@ -64,7 +59,7 @@
 }
 
 .imagem-texto__titulo-esquerda i {
-    color: #FF7F11; /* Ícone laranja */
+    color: #FF7F11; 
 }
 
 .imagem-texto__conteudo p {
@@ -74,7 +69,7 @@
 }
 
 .imagem-texto__conteudo ul {
-    list-style: none; /* Remove os pontos padrão da lista */
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
@@ -86,27 +81,26 @@
     font-size: 1.1rem;
 }
 
-/* Cria um "check" personalizado para a lista */
+
 .imagem-texto__conteudo ul li::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-        background-image: 
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-check-circle-2'%3E%3Cpath d='M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+    top: 0.3125rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-check-circle-2'%3E%3Cpath d='M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-/* --- SEÇÃO CTA - VERSÃO FINAL REFINADA --- */
+
 
 .cta-sobre {
     background-color: #031926;
     color: #FFFFFF;
     padding: 6rem 5%;
-    position: relative; /* Essencial para os pseudo-elementos */
+    position: relative; 
     overflow: hidden;
     text-align: center;
 }
@@ -116,29 +110,29 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='16' y='16' width='6' height='6' rx='1'/%3E%3Crect x='2' y='16' width='6' height='6' rx='1'/%3E%3Crect x='9' y='2' width='6' height='6' rx='1'/%3E%3Cpath d='M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3'/%3E%3Cpath d='M12 12V8'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     
-    /* Opacidade baixíssima para um efeito de marca d'água */
+
     opacity: 0.05;
     
-    /* Posiciona o ícone no centro e rotaciona */
+    
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
-/* Conteúdo principal, que fica acima da camada de fundo */
+
 .cta-sobre__conteudo {
-    max-width: 750px;
+    max-width: 46.875rem;
     margin: 0 auto;
     position: relative;
     z-index: 2;
 }
 
-/* Título principal da seção */
+
 .cta-sobre h2 {
     font-size: 2.5rem;
     color: #FFFFFF;
@@ -146,22 +140,19 @@
     margin-bottom: 1rem;
 }
 
-/* ÍCONE DE "ENVIAR": Adicionado diretamente acima do H2 usando CSS */
+
 .cta-sobre h2::before {
     content: '';
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     margin: 0 auto 1.5rem auto;
-
-    /* SVG do ícone "Send" da Lucide, embutido e com a cor laranja */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m22 2-7 20-4-9-9-4Z'/%3E%3Cpath d='m22 2-11 11'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* Parágrafo de apoio */
 .cta-sobre p {
     margin: 1rem 0 2.5rem 0;
     font-size: 1.1rem;

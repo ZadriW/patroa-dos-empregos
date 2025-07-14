@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
-/* 1. Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +8,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #031926; /* Azul Escuro para o texto principal */
-    background-color: #F3E9DC; /* Bege para o fundo */
+    color: #031926; 
+    background-color: #F3E9DC; 
 }
 
 .secao {
@@ -32,13 +30,13 @@ img {
     display: block;
 }
 
-/* 2. Cabeçalho */
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: #031926; /* Azul Escuro */
+    background-color: #031926; 
     position: sticky;
     top: 0;
     z-index: 100;
@@ -47,7 +45,7 @@ img {
 .cabecalho__apresentacao {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .cabecalho__apresentacao__titulo {
@@ -56,7 +54,7 @@ img {
     font-weight: bold;
 }
 .cabecalho__logo img {
-    height: 40px;
+    height: 2.5rem;
     width: auto;
 }
 
@@ -72,7 +70,7 @@ img {
     color: #FFFFFF; /* Branco */
     font-weight: 500;
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
 }
 
 .nav-link::after {
@@ -81,8 +79,8 @@ img {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
-    background-color: #468189; /* Azul Médio para detalhe do hover */
+    height: 0.125rem;
+    background-color: #468189; 
     transition: width 0.3s ease;
 }
 
@@ -93,15 +91,15 @@ img {
 .cabecalho__hamburger {
     display: none;
     cursor: pointer;
-    color: #FFFFFF; /* Branco */
+    color: #FFFFFF; 
 }
 
 /* 3. Componentes */
 .btn-principal {
-    background-color: #FF7F11; /* Laranja */
-    color: #FFFFFF; /* Branco */
-    padding: 14px 28px;
-    border-radius: 5px;
+    background-color: #FF7F11;
+    color: #FFFFFF; 
+    padding: 0.875rem 1.75rem;
+    border-radius: 0.3125rem;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
@@ -117,7 +115,7 @@ img {
 
 .btn-principal:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255, 127, 17, 0.25); /* Sombra Laranja */
+    box-shadow: 0 0.625rem 1.25rem rgba(255, 127, 17, 0.25); 
     
 }
 
@@ -127,10 +125,10 @@ img {
 }
 
 .btn-feedback {
-    background-color: #FF7F11; /* Laranja */
-    color: #FFFFFF; /* Branco */
-    padding: 14px 28px;
-    border-radius: 5px;
+    background-color: #FF7F11; 
+    color: #FFFFFF; 
+    padding: 0.875rem 1.75rem;
+    border-radius: 0.3125rem;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
@@ -138,7 +136,7 @@ img {
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     border: none;
     cursor: pointer; 
-    margin-top: 60px; 
+    margin-top: 3.75rem; 
     
     
     
@@ -146,10 +144,10 @@ img {
 
 .btn-feedback:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255, 127, 17, 0.25); /* Sombra Laranja */ 
+    box-shadow: 0 0.625rem 1.25rem rgba(255, 127, 17, 0.25); 
 }
 
-/* Seção Início (Hero) */
+
 .secao-inicio {
     min-height: 70vh;
     display: flex;
@@ -159,25 +157,25 @@ img {
     padding: 2rem 5%;
     position: relative;
     background-image:
-        linear-gradient(rgba(3, 25, 38, 0.4), rgba(3, 25, 38, 0.4)), /* Overlay com Azul Escuro translúcido */
+        linear-gradient(rgba(3, 25, 38, 0.4), rgba(3, 25, 38, 0.4)), /* Overlay */
         url('/images/foto-inicio.png');
     background-size: cover;
     background-position: center;
 }
 
 .container-inicio {
-    max-width: 650px;
+    max-width: 40.625rem;
 }
 
 .caixa-texto-inicio {
-    background-color: #031926; /* Azul Escuro */
-    color: #FFFFFF; /* Branco */
+    background-color: #031926; 
+    color: #FFFFFF; 
     padding: 2rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .caixa-texto-inicio h2 {
-    color: #FFFFFF; /* Branco */
+    color: #FFFFFF; 
     font-size: 2.2rem;
     font-weight: 800;
 }
@@ -192,7 +190,7 @@ img {
     
 }
 
-/* Seção Verdade */
+
 .secao-verdade {
     padding: 4rem 5%;
     text-align: center;
@@ -200,27 +198,27 @@ img {
 
 .secao-verdade__titulo {
     font-size: 2.5rem;
-    max-width: 1000px;
+    max-width: 62.5rem;
     margin: 0 auto;
     line-height: 1.4;
     font-weight: 800;
-    color: #031926; /* Azul Escuro */
+    color: #031926; 
 }
 
 .secao-verdade__descricao {
     font-size: 1.5rem;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 1rem auto 0 auto;
-    color: #468189; /* Azul Médio */
+    color: #468189; 
 }
 
-/* Serviços */
+
 .logos__grade {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     align-items: center;
     gap: 2rem;
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
     
 }
@@ -230,47 +228,47 @@ img {
 }
 
 .logos__card-icone {
-    width: 50px;  /* Define a largura desejada */
-    height: 50px; /* Define a altura desejada */
-    margin: 0 auto 20px auto; /* Centraliza e adiciona espaço abaixo */
-    display: block; /* Garante que a margem automática funcione */
+    width: 3.125rem;  
+    height: 3.125rem; 
+    margin: 0 auto 1.25rem auto; 
+    display: block; 
     color: #031926; 
 }
 
 .logos__card-icone.lucide-file-text {     
-    stroke-width: 1.5;   /* <<-- DEFINE A ESPESSURA DA LINHA AQUI */
+    stroke-width: 1.5;   
 }
 
 .logos__card img {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     display: flex;
-    margin-left: 100px;
+    margin-left: 6.25rem;
     align-items: center;
 }
 
 .logos__card i {
-    color: #FF7F11; /* Laranja */
-    width: 48px;
-    height: 48px;
+    color: #FF7F11; 
+    width: 3rem;
+    height: 3rem;
     margin-bottom: 1rem;
 }
 
 .logos__card h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #031926; /* Azul Escuro */
+    color: #031926; 
 }
 
-/* Estilo para o subtítulo "Nossa Filosofia" */
+
 .eyebrow-text {
-    color: #468189; /* Azul médio */
+    color: #468189; 
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     margin-bottom: 1rem;
 }
 
-/* Reutilizando o estilo da lista com "checks" que já usamos em outras páginas */
+
 .secao-imagem-texto ul {
     list-style: none;
     padding: 0;
@@ -289,15 +287,15 @@ img {
     content: '';
     position: absolute;
     left: 0;
-    top: 4px;
-    width: 24px;
-    height: 24px;
+    top: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-check-circle-2'%3E%3Cpath d='M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-/* Seção Imagem e Texto */
+
 .secao-imagem-texto {
     display: flex;
     align-items: center;
@@ -313,7 +311,7 @@ img {
 .imagem-texto__conteudo h2 {
     font-size: 2.5rem;
     line-height: 1.3;
-    color: #031926; /* Azul Escuro */
+    color: #031926;
 }
 
 .imagem-texto__conteudo .btn-principal {
@@ -325,8 +323,8 @@ img {
 }
 
 .imagem-texto__imagem img {
-    border-radius: 8px;
-    box-shadow: 0 5px 25px rgba(3, 25, 38, 0.15); /* Sombra com base no Azul Escuro */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3125rem 1.5625rem rgba(3, 25, 38, 0.15); 
 }
 
 .layout-reverso {
@@ -334,11 +332,11 @@ img {
 }
 
 .caixa-sobre-mim {
-    flex: 1; /* Faz a caixa ocupar todo o espaço do seu contêiner pai */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Adicione um padding para mais respiro, se desejar */
+    
     padding: 2rem;
     
 }
@@ -347,7 +345,7 @@ img {
     font-size: 2.5rem;
     
     font-weight: 700;
-    color: #031926; /* Azul Escuro */
+    color: #031926; 
     margin-bottom: 1.5rem;
     line-height: 1.4;
 }
@@ -365,10 +363,10 @@ img {
 }
 
 .caixa-sobre-mim strong {
-    color: #FF7F11; /* Laranja */
+    color: #FF7F11; 
 }
 
-/* --- Seção de Serviços da Patroa --- */
+
 
 .servicos {
     padding: 5rem 5%;
@@ -379,11 +377,11 @@ img {
     padding: 2rem 5%;
     position: relative;
     background-image:
-        linear-gradient(rgba(3, 25, 38, 0.4), rgba(3, 25, 38, 0.4)), /* Overlay com Azul Escuro translúcido */
+        linear-gradient(rgba(3, 25, 38, 0.4), rgba(3, 25, 38, 0.4)), 
         url('/images/foto-servicos.png');
     background-size: cover;
     background-position: center;
-    background-color: #F3E9DC; /* Ou outra cor de fundo claro que preferir */
+    background-color: #F3E9DC; 
 }
 
 
@@ -396,36 +394,36 @@ img {
     font-size: 2.5rem;
     font-weight: 800;
  
-    color: #F3E9DC; /* Azul Escuro */
+    color: #F3E9DC; 
     text-transform: uppercase;
 }
 
 .servicos__apresentacao-subtitulo {
     font-size: 1.2rem;
     font-style: italic;
-    color: #FF7F11; /* Azul Médio */
+    color: #FF7F11; 
     font-weight: 500;
     margin-top: 0.5rem;
 }
 
 .servicos__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Cria as duas colunas */
-    gap: 1.5rem; /* Espaçamento entre os cards */
-    max-width: 1200px;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1.5rem; 
+    max-width: 75rem;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     
 }
 
 .servico__card {
-    background-color: #031926; /* Azul Escuro */
+    background-color: #031926; 
     color: #FFFFFF;
     padding: 2rem;
-    border-radius: 8px;
-    position: relative; /* Necessário para posicionar o ícone */
+    border-radius: 0.5rem;
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(3, 25, 38, 0.15); 
+    box-shadow: 0 0.25rem 0.93rem rgba(3, 25, 38, 0.15); 
     cursor: pointer;
 }
 
@@ -436,21 +434,21 @@ img {
 
 .servico__card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(3, 25, 38, 0.2);
+    box-shadow: 0 0.625rem 1.5625rem rgba(3, 25, 38, 0.2);
 }
 
 .servico__card-icone {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    color: #468189; /* Azul Médio */
+    color: #468189; 
 }
 
 .servico__card-titulo {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
-    padding-right: 2rem; /* Espaço para não sobrepor o ícone */
+    padding-right: 2rem; 
 }
 
 .servico__card-descricao {
@@ -459,21 +457,18 @@ img {
     opacity: 0.9;
 }
 
-
-
-/* Seção Feedbacks */
 .secao-destaque {
-    background-color: #031926; /* Azul Escuro */
+    background-color: #031926; 
 }
 .secao-destaque .secao__titulo {
-    color: #FFFFFF; /* Branco */
+    color: #FFFFFF; 
 }
 .feedback__card {
     width: 100%;
-    min-height: 300px;
+    min-height: 18.75rem;
     margin: 0 auto;
     text-align: center;
-    color: #FFFFFF; /* Branco */
+    color: #FFFFFF; 
 }
 .feedback__card p {
     font-size: 1.2rem;
@@ -483,12 +478,12 @@ img {
 .feedback__card h4 {
     margin-top: 1.5rem;
     font-weight: 600;
-    color: #468189; /* Azul Médio */
+    color: #468189; 
 }
 
-/* --- Seção de Feedbacks (Carrossel) --- */
+
 .feedbacks {
-    padding: 5rem 0; /* O padding lateral será zero para o carrossel ir de ponta a ponta */
+    padding: 5rem 0; 
     background-color: #F3E9DC;
     
 }
@@ -496,7 +491,7 @@ img {
 .feedbacks__apresentacao {
     text-align: center;
     margin-bottom: 3rem;
-    padding: 0 5%; /* Adiciona padding para os títulos não colarem nas bordas */
+    padding: 0 5%; 
 }
 
 .feedbacks__apresentacao-titulo {
@@ -523,54 +518,36 @@ img {
 
 .scroller__inner {
     display: flex;
-    align-items: flex-start; /* Impede que os cards estiquem na vertical */
+    align-items: flex-start; 
     gap: 2rem;
     width: max-content;
-    padding-right: 2rem; /* Adiciona um preenchimento para garantir a emenda perfeita */
-    animation: scroll 40s linear infinite; /* 40s para uma rolagem lenta */
+    padding-right: 2rem; 
+    animation: scroll 40s linear infinite; 
 }
 
-/* Pausa a animação ao passar o mouse */
+
 .scroller:hover .scroller__inner {
     animation-play-state: paused;
 }
 
 
-
-/* Animação de rolagem com lógica simplificada e mais robusta */
-@keyframes scroll {
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-/* Ajuste de posicionamento para telas menores */
-@media (max-width: 768px) {
-    .swiper-button-prev {
-        left: 5px;
-    }
-    .swiper-button-next {
-        right: 5px;
-    }
-}
-
 .feedback-card {
-    flex: 0 0 460px; /* Define uma largura base para os cards */
+    flex: 0 0 28.75rem; 
     background-color: #031926;
     color: #FFFFFF;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     cursor: pointer;
-    min-height: 300px;
+    min-height: 18.75rem;
 }
 
 .feedback-card__icone {
     color: #FF7F11; /* Laranja */
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .feedback-card__depoimento {
@@ -588,13 +565,11 @@ img {
     margin-top: auto;
 }
 
-/* Opcional: Pausar a animação ao passar o mouse */
+
 .scroller:hover .scroller__inner {
     animation-play-state: paused;
 }
 
-/* Rodapé */
-/* --- Rodapé Aprimorado --- */
 
 .rodape {
     background-color: #031926; /* Azul Escuro */
@@ -606,9 +581,9 @@ img {
 .rodape__grid {
     display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Grid responsivo */
-    gap: 60px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 3.75rem;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -660,7 +635,7 @@ img {
     transition: opacity 0.3s ease, color 0.3s ease;
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 0.9375rem;
     align-items: center;
     
 }
@@ -674,44 +649,41 @@ img {
     text-align: center;
     padding: 1.5rem 5%;
     margin-top: 4rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     opacity: 0.6;
 }
 
 .social-media {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .social-media img {
-    height: 40px;
+    height: 2.5rem;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     
 }
 
 /* Responsividade para o rodapé */
 @media (max-width: 768px) {
     .rodape__grid {
-        text-align: center; /* Centraliza o texto das colunas em telas pequenas */
+        text-align: center; 
     }
 
     .rodape__coluna {
-        align-items: center; /* Centraliza os itens da coluna */
+        align-items: center; 
     }
 
     .rodape__lista-links a {
-        justify-content: center; /* Centraliza os links de contato */
+        justify-content: center; 
     }
 }
 
-
-
-/* --- Responsividade para a Seção de Serviços --- */
 @media (max-width: 900px) {
     .servicos__grid {
-        grid-template-columns: 1fr; /* Em telas menores, os cards ficam em uma única coluna */
+        grid-template-columns: 1fr; 
     }
 }
 
@@ -741,5 +713,21 @@ img {
     .rodape__contato-info {
         flex-direction: column;
         gap: 1rem;
+    }
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .swiper-button-prev {
+        left: 5px;
+    }
+    .swiper-button-next {
+        right: 5px;
     }
 }
