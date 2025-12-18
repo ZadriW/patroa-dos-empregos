@@ -1,0 +1,190 @@
+
+@import url(/tela-main/style.css);
+
+.feedbacks-hero {
+    background-color: #031926;
+    padding: 7rem 5%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.feedbacks-hero__conteudo {
+    max-width: 53.125rem;
+    margin: 0 auto;
+}
+
+.feedbacks-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.feedbacks-hero h1::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1.5rem auto; 
+
+   
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF7F11' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 11 2 2 4-4'/%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FF7F11;
+}
+
+.feedbacks-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    line-height: 1.7;
+    max-width: 46.875rem;
+    margin: 0 auto;
+}
+
+
+.feedback-print-imagem {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(3, 25, 38, 0.1);
+    width: 100%;
+}
+
+/* Estilo para o bloco de citação */
+.feedback-citacao {
+    margin: 0;
+    border-left: 5px solid #FF7F11; 
+    padding-left: 2rem;
+}
+
+.feedback-citacao p {
+    font-size: 1.75rem; 
+    font-style: italic; 
+    line-height: 1.6;
+    color: #031926;
+    margin-bottom: 1.5rem;
+}
+
+.feedback-citacao footer {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #468189; 
+}
+
+
+
+.secao-outros-feedbacks {
+    background-color: #F3E9DC; 
+}
+
+.outros-feedbacks__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.quote-card-menor {
+    background-color: #FFFFFF; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-top: 4px solid #FF7F11; 
+    box-shadow: 0 0.25rem 0.9375rem rgba(3, 25, 38, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-card-menor p {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #031926;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1; 
+}
+
+.quote-card-menor footer {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #031926;
+    opacity: 0.8;
+}
+
+
+
+.cta-final-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 0; 
+    background-color: #031926; 
+}
+
+
+.cta-final__texto {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 5%;
+}
+
+.cta-final__conteudo {
+    max-width: 31.25rem;
+}
+
+.cta-final__conteudo h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.cta-final__conteudo p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+
+.cta-final__imagem {
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem; 
+}
+
+@media (max-width: 900px) {
+    .cta-final-split {
+        
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-final__texto {
+        padding: 5rem 5%;
+        text-align: center;
+    }
+    
+    
+    .cta-final__imagem {
+       order: -1; 
+    }
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .feedbacks-hero h1 {
+        font-size: 2.2rem;
+    }
+    .feedback-citacao p {
+        font-size: 1.3rem; 
+    }
+    .imagem-texto__conteudo {
+        text-align: center;
+    }
+    .feedback-citacao {
+        border-left: none;
+        padding-left: 0;
+    }
+}
